@@ -98,6 +98,5 @@ app.get("/login", login);
 app.get("/", (req, res) => {
   res.json({ teste: "on" });
 });
-app.listen(process.env.PORT, () => {
-  console.log("on");
-});
+
+export default app
