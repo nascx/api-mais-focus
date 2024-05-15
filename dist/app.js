@@ -95,6 +95,9 @@ app.use((0, import_cors.default)());
 app.use(import_express.default.json());
 app.post("/register", createAccount);
 app.get("/login", login);
-app.listen(5e3, () => {
+app.get("/", (req, res) => {
+  res.json({ teste: "on" });
+});
+app.listen(process.env.PORT, () => {
   console.log("on");
 });

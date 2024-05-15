@@ -12,6 +12,6 @@ app.get('/', (req, res) => {
     res.json({teste: 'on'})
 })
 
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
     console.log('on')
 })
